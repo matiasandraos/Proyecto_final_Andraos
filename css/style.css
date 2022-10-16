@@ -101,6 +101,10 @@ h3 {
 
 }
 
+a:hover {
+    color: var(--secondary);
+}
+
 
 
 /* HEADER */
@@ -422,12 +426,39 @@ align-items: center;
 
 /* ABOUT */
 
-.about {
+.banner {
     background-image: url(../images/image\ 6.png);
     background-size: 100%;
-    text-align: center;
-    font-family: var(--font-primary);
+    background-repeat: no-repeat;
+    
 }
+
+.banner__titleAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+    font-size: var(--text-xxl);
+    height: inherit;
+    font-family: var(--font-primary);
+
+}
+
+.about__parrafo__title {
+color: var(--primary);
+padding-bottom: 1em;
+}
+
+.about__parrafo__text {
+
+    color: var(--primary);
+    font-size: var(--text-sm);
+    font-family: var(--font-secondary);
+    
+    line-height: var(--sp-md);
+  /*   text-align: center;   */
+}
+
 
 @media screen and (max-width: 700px) {
 
