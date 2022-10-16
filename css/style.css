@@ -1,0 +1,445 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+
+/* VARIABLES */
+
+:root {
+
+    /* Palette */
+    --primary: #231F20;
+    --secondary: #D2232A;
+    --accent: #D2232A;
+    --light: #fff;
+
+    
+    /* FONT SIZE */
+    --text-xxl: 4em;
+    --text-xl: 2.8em;
+    --text-lg: 2.4em;
+    --text-md: 1.6em;
+    --text-sm: 1.2em;
+    --text-xs: 0.8em;
+    
+    
+    /* SPACINGS */
+
+    --sp-xxl: 12rem;
+    --sp-xl: 8rem;
+    --sp-lg: 5rem;
+    --sp-md: 3.2rem;
+    --sp-sm: 1.6rem;
+    --sp-xs: 0.8rem; 
+
+    /* FONT FAMILY */
+
+    --font-primary: Playball;
+    --font-secondary: Fira Sans;
+    --font-heading: Roboto Slab;
+
+
+}
+
+
+/* NORMALIZE */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+
+   
+    font-family: var(--font-secondary);
+    font-size: var(--text-sm);
+    color: var(--secondary);
+
+}
+ul {
+    list-style-type: none;
+
+}
+a {
+    font-size: var(--text-md);
+    text-decoration: none;
+    color: var(--light);
+
+}
+
+.container {
+    max-width: 1250px;
+    margin: var(--sp-md) auto; 
+
+
+}
+
+h2 {
+    font-family: var(--font-primary);
+    font-size: var(--text-xl);
+    
+    
+}
+
+h3 {
+    font-family: var(--font-secondary);
+    font-size: var(--text-lg);
+
+}
+
+.subtitulos {
+
+    font-size: var(--text-md);
+    color: var(--secondary);
+
+}
+
+
+
+/* HEADER */
+
+header {
+  
+    background-color: var(--primary);
+    padding: var(--sp-xs);
+    
+ 
+
+}
+
+.navbar{
+    display: flex;
+   
+    justify-content: space-between;
+    
+}
+
+
+.navbar .navbar__link {
+    display: flex;
+    flex-direction: row;
+   
+   
+
+
+}
+
+.navbar__link__img {
+
+width: 10em;
+
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+   
+   
+
+}
+
+.menu .menu__link {
+
+    padding: 1rem 1.5rem;
+}
+    
+
+
+
+
+/* BODY */
+
+
+/* BANNER */
+
+.banner {
+background-image: url(../images/imagen\ banner\ home.png);
+height: 500px;
+width: 100%;
+margin: none;
+margin-left: 0%;
+display: flex;
+flex-direction: column;
+}
+
+.banner__title {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+height: 500px;
+padding: 2em;
+font-size: var(--sp-md);
+
+}
+
+.banner__title2 {
+    color: var(--light);
+
+}
+
+
+
+.banner__foto {
+    display: flex;
+   justify-content: center;
+ 
+    z-index: -2;
+    
+    max-width: auto;
+}
+
+
+
+/* OUR HISTORY */
+
+.story {
+
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    
+   
+
+
+}
+
+.story__ourStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.story__ourStory__title {
+    color: var(--primary);
+    padding: 1em;
+    font-size: var(--text-xxl);
+}
+
+.story__ourStory .story__text {
+    color: var(--primary);
+    height: 150px;
+    padding-left: 17em;
+    padding-right: 17em;
+    font-size: var(--text-sm);
+    
+    line-height: var(--sp-md);
+    text-align: center;
+
+}
+
+
+
+.story__provide {
+
+    display: flex;
+    justify-content: center;
+}
+
+.story__provide__title {
+    color: var(--secondary);
+    padding: var(--sp-sm);
+    padding-left: 1em;
+    color: var(--accent);
+    
+}
+
+.story__provide .story__text {
+    color: var(--primary);
+    padding-left: 3em;
+    
+    font-size: var(--text-sm);
+    
+    line-height: var(--sp-md);
+   
+
+}
+
+.titulo__negro {
+    color: var(--primary);
+
+}
+
+
+
+
+
+
+
+
+/* WHAT WE OFFER */
+
+.offer{
+background-image: url(../images/imagen\ empanadas.png);
+background-repeat: repeat;
+margin-left: -7.4em;
+margin-right: -7.4em;
+height: 70em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.offer__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.offer__image__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--sp-sm);
+}
+
+.offer__image__button__menu {
+    color: var(--primary);
+    font-size: var(--text-xs);
+    padding-left: var(--sp-xl);
+    padding-right: var(--sp-xl);
+    
+}
+
+
+.offer__whatWeOffer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.offer__whatWeOffer__title {
+    color: var(--light);
+    padding: .8em;
+    text-align: center;
+    font-size: var(--text-xxl);
+
+}
+
+.offer__whatWeOffer__text {
+    color: var(--light);
+    height: 70px;
+    padding-left: 20em;
+    padding-right: 20em;
+    font-size: var(--text-sm);
+    
+    line-height: var(--sp-md);
+    text-align: center;    
+
+}
+
+/* GET IN TOUCH */
+
+.touch {
+    background-image: url(../images/image\ 5.png);
+background-repeat: no-repeat;
+margin-left: -7.4em;
+margin-right: -7.4em;
+height: 70em;
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+
+
+
+}
+
+.touch h2 { 
+    font-size: var(--text-xxl);
+    padding: .8em;
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+.touch  p {
+    color: var(--light);
+    padding-left: 17em;
+    padding-right: 17em;
+    font-size: var(--text-sm);
+    
+    line-height: var(--sp-md);
+    text-align: center;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+    color: var(--light);
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30em;
+   
+}
+
+.footer__contact {
+    max-width: 14em;
+}
+
+.footer h2 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.footer__contact p {
+    padding: .5em;
+    font-size: var(--text-sm);
+} 
+
+.footer__quickLinks__item {
+    padding-bottom: .5em;
+
+}
+
+
+
+
+
+
+
+/* ABOUT */
+
+.about {
+    background-image: url(../images/image\ 6.png);
+    background-size: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+}
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+}
