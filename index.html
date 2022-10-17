@@ -62,8 +62,8 @@
 
         <!-- OUR STORY -->
 
-        <section class="story">
-            <article class="story__ourStory">
+        <section class="story row">
+            <article class="story__ourStory col-12 text-center">
                 <div class="subtitulos">
                     Santa Fe Cafe
                 </div>
@@ -78,11 +78,13 @@
                 </p>
             </article>
             
-            <div class="story__provide row">
+            <div class="story__provide col-lg-12  col-xl-6" >
                 <figure class="col">
                     <img src="./images/image 1.png" alt="plato de comida">
                 </figure>
-                <article class="col">
+            </div>
+            
+                <article class="  col-lg-12 col-xl-6">
                     <h2 class="story__provide__title">
                         We Provide Locally
                         Crafted Food
@@ -103,7 +105,7 @@
                         go. At Santa Fe Cafe it’s always easy, breezy, delectable and fun!
                     </p>
                 </article>
-            </div>
+           
 
 
 
@@ -148,6 +150,8 @@
 
         </section>
 
+        <!-- GET IN TOUCH -->
+
         <section class="touch">
             <article>
                 <h2>Get In Touch With Us</h2>
@@ -155,7 +159,20 @@
                     know how we can help!</p>
                 <p><small>Mon – Sun 8:00 AM – 4:00 PM</small></p>
             </article>
+
+            
+                  
+            <div class="input-group-lg mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="input-group-lg mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+         </form>
         </section>
+      
 
 
 
@@ -163,8 +180,8 @@
 
 
     <footer>
-        <article class="footer">
-            <div class="footer__contact">
+        <article class="footer row">
+            <div class="footer__contact col-md-12 col-lg-4">
                 <h2>Contact Us</h2>
                 <p>5555 Tamiami Trail No, Suite G13
                     Naples, FL 34108
@@ -172,10 +189,13 @@
                 </p>
                 <p>Call Us: (239) 631-7450
                     Email Us: lucas@santafenaples.com
+                    
+                </p>
+                <p>
                     Open Mon - Sun 8:00 AM - 4:00 PM
                 </p>
             </div>
-            <div class="footer__quickLinks">
+            <div class="footer__quickLinks col-md-12 col-lg-4">
                 <h2>Quick Links</h2>
                 <ul>
                     <li>
@@ -195,8 +215,11 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="col-md-12 col-lg-4">
                 <h2>Locate Us</h2>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.486570997762!2d-81.80427798496983!3d26.213375183433687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db1f5c74f04c55%3A0x3c6d83e1b7101f4f!2sSanta%20Fe%20Cafe!5e0!3m2!1ses-419!2sus!4v1665980016063!5m2!1ses-419!2sus" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
 
         </article>
