@@ -112,23 +112,34 @@ a:hover {
 header {
   
     background-color: var(--primary);
-    padding: var(--sp-xs);
+   /*  padding: var(--sp-xs); */
+   
+    height: 6em;
+    margin-top: 0;
     
- 
 
 }
 
+
+
+
 .navbar{
     display: flex;
-   
+    height: inherit;
+    height: 6em;
     justify-content: space-between;
-    
+    background-color: var(--primary);
+    margin-top: auto;
+    flex-wrap: wrap;
 }
 
 
 .navbar .navbar__link {
     display: flex;
     flex-direction: row;
+    height: inherit;
+    flex-wrap: wrap;
+    
    
    
 
@@ -136,7 +147,8 @@ header {
 }
 
 .navbar__link__img {
-
+align-items: center;
+justify-content: center;
 width: 10em;
 
 }
@@ -145,6 +157,8 @@ width: 10em;
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    height: inherit;
+    flex-wrap: wrap;
    
    
 
@@ -211,6 +225,7 @@ font-size: var(--sp-md);
     display: flex;
     flex-direction: column;
     padding: 3em;
+    margin-top: 0%;
     
    
 
@@ -249,6 +264,7 @@ font-size: var(--sp-md);
 
     display: flex;
     justify-content: center;
+    
 }
 
 .story__provide__title {
@@ -286,7 +302,7 @@ font-size: var(--sp-md);
 
 .offer{
 background-image: url(../images/imagen\ empanadas.png);
-background-repeat: repeat;
+background-repeat: no-repeat;
 margin-left: -7.4em;
 margin-right: -7.4em;
 height: 70em;
@@ -426,12 +442,17 @@ align-items: center;
 
 /* ABOUT */
 
-.banner {
+.banner__about {
     background-image: url(../images/image\ 6.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    height: 30em;
+    width: 100%;
+    margin: none;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    }
     
-}
+
 
 .banner__titleAbout {
     display: flex;
@@ -460,7 +481,7 @@ padding-bottom: 1em;
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 
     .navbar {
         flex-direction: column;
@@ -469,6 +490,18 @@ padding-bottom: 1em;
 
     .menu{
         justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .story {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .story__provide {
+        display: flex;
         flex-wrap: wrap;
 
     }
