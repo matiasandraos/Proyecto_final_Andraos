@@ -1,0 +1,18 @@
+.footer {
+    color: $light;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 33em;
+    height: auto;
+    margin-top: -2em;
+    padding-top: 3em;
+    padding-left: 3em;
+    
+   
+}
+
+.footer h2 {
+    padding-bottom: 1em;
+}

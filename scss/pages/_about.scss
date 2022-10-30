@@ -1,0 +1,44 @@
+.banner__about {
+    background-image: url('../images/image\ 6.png');
+    height: 30em;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+
+    }
+    
+.about {
+    padding-bottom: 5em;
+    padding-bottom: 5em;
+    
+}
+
+.banner__titleAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+    font-size: $text-xxl;
+    height: inherit;
+    font-family: $font-primary;
+
+}
+
+.about__parrafo__title {
+color: $primary;
+padding-bottom: 1em;
+}
+
+.about__parrafo__text {
+
+    color: $primary;
+    font-size: $text-sm;
+    font-family: $font-secondary;
+    
+    line-height: $sp-md;
+  
+}

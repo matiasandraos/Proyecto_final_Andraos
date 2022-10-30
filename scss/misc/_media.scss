@@ -1,0 +1,30 @@
+@media screen and (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .story {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .story__provide {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+}
