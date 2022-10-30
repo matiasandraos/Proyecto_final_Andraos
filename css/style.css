@@ -178,7 +178,7 @@ width: 10em;
 
 /* BANNER */
 
- .banner {
+ /* .banner {
 background-image: url(../images/imagen\ banner\ home.png);
 height: 500px;
 width: 100%;
@@ -186,7 +186,7 @@ margin: none;
 margin-left: 0%;
 display: flex;
 flex-direction: column;
-}
+} */
 
 /* .banner__title {
 display: flex;
@@ -310,7 +310,7 @@ font-size: var(--sp-md);
 
 /* WHAT WE OFFER */
 
- .offer{
+ /* .offer{
 background-image: url(../images/imagen\ empanadas.png);
 background-repeat: no-repeat;
 margin-left: -7.5em;
@@ -320,7 +320,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-}
+} */
 /*
 .offer__image {
     display: flex;
@@ -376,7 +376,7 @@ align-items: center;
 
 /* GET IN TOUCH */
 
- .touch {
+/*  .touch {
     background-image: url(../images/image\ 5.png);
 background-repeat: no-repeat;
 margin-left: -7.7em;
@@ -391,7 +391,7 @@ align-items: center;
 
 
 
-}
+} */
 /*
 .touch h2 { 
     font-size: var(--text-xxl);

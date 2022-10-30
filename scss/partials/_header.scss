@@ -20,41 +20,65 @@ header {
     background-color: $primary;
     margin-top: auto;
     flex-wrap: wrap;
+
+
+        & .navbar__link {
+            display: flex;
+            flex-direction: row;
+            height: inherit;
+            flex-wrap: wrap;
+            
+        
+                    .navbar__link__img {
+                    align-items: center;
+                    justify-content: center;
+                    width: 10em;
+
+                    }
+
+
+        }
+
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            height: inherit;
+            flex-wrap: wrap;
+        
+        
+                    & .menu__link {
+
+                        padding: 1rem 1.5rem;
+
+
+
+                        
+                    }
+                        
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
 }
 
 
-.navbar .navbar__link {
-    display: flex;
-    flex-direction: row;
-    height: inherit;
-    flex-wrap: wrap;
-    
-   
-   
 
 
-}
 
-.navbar__link__img {
-align-items: center;
-justify-content: center;
-width: 10em;
 
-}
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    height: inherit;
-    flex-wrap: wrap;
-   
-   
 
-}
-
-.menu .menu__link {
-
-    padding: 1rem 1.5rem;
-}
-    

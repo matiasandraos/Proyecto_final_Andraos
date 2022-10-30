@@ -4,8 +4,11 @@
 
 
 /* MISC */
-@import './misc/_variables' ;    
+@import './misc/_variables';
 @import './misc/_normalize';
+@import './misc/_media';
+@import './misc/_mixin' ;
+@import './misc/_extends';
 
 
 /* PARTIALS */
@@ -27,134 +30,156 @@
 @import './misc/_media';
 
 
-/* BODY */
 
 
 /* BANNER */
 
- .banner {
+.banner {
+      
+    
     background-image: url('../images/imagen\ banner\ home.png');
-    height: 500px;
-    width: 100%;
     margin: none;
     margin-left: 0%;
-    display: flex;
-    flex-direction: column;
-    } 
-  
+   @extend .generalBanner ;
+
     .banner__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    height: 500px;
-    padding: 2em;
-    font-size: $sp-md;
-    
-    }
-    
-    .banner__title2 {
-        color: $light;
-    
-    }
-    
-    
-    
-    .banner__foto {
         display: flex;
-       justify-content: center;
-     
-        z-index: -2;
-        
-        max-width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height: 500px;
+        padding: 2em;
+        font-size: $sp-md;
+
     }
-    
-    
-    
-    /* OUR HISTORY */
-    
-    .story {
-    
-        background-color: $light;
-        /* display: flex;
+
+
+
+}
+
+
+.banner__title2 {
+    color: $light;
+
+}
+
+
+
+.banner__foto {
+    display: flex;
+    justify-content: center;
+
+    z-index: -2;
+
+    max-width: auto;
+}
+
+
+
+/* OUR HISTORY */
+
+.story {
+
+    background-color: $light;
+    /* display: flex;
         flex-direction: column; */
-        padding: 3em;
-        margin-top: 0%;
-        
-       
+    padding: 3em;
+    margin-top: 0%;
+
+    &__ourStory__title {
+        color: $primary;
+        padding: 1em;
+        font-size: $text-xxl;
+    }
+
+    &__ourStory .story__text {
+        color: $primary;
+        height: 150px;
+        padding-left: 17em;
+        padding-right: 17em;
+        font-size: $text-sm;
+
+        line-height: $sp-md;
+        text-align: center;
+
+    }
+ .story__provide {
+
+
+    .story__provide__title {
+    color: $secondary;
+    padding: $sp-sm;
+    padding-left: 1em;
+    color: $accent;
+    }
+    .story__text {
+    color: $primary;
     
-    
+    padding-left: 3em;
+
+    font-size: $text-sm;
+
+    line-height: $sp-md;
+
+
     }
     
-    /* .story__ourStory {
+    
+
+    
+    }
+
+    .titulo__negro {
+    color: $primary;
+
+    }
+   
+
+   
+
+
+
+
+
+}
+
+/* .story__ourStory {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+
+        siempre estuvo comentado
     }
      */
-    .story__ourStory__title {
-        color: $primary;
-        padding: 1em;
-        font-size: $text-xxl;
-    }
-    
-    .story__ourStory .story__text {
-        color: #231F20;
-        height: 150px;
-        padding-left: 17em;
-        padding-right: 17em;
-        font-size: $text-sm;
-        
-        line-height: $sp-md;
-        text-align: center;
-    
-    }
-    
-    
-    
-    /* .story__provide {
+
+
+
+
+
+/* .story__provide {
     
         display: flex;
         justify-content: center;
         
+        siempre estuvo comentado
+        
     } */
-    
-    .story__provide__title {
-        color: $secondary;
-        padding: $sp-sm;
-        padding-left: 1em;
-        color: $accent;
-        
-    }
-    
-    .story__provide .story__text {
-        color: $primary;
-        padding-left: 3em;
-        
-        font-size: $text-sm;
-        
-        line-height: $sp-md;
-       
-    
-    }
-    
-    .titulo__negro {
-        color: $primary;
-    
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    /* WHAT WE OFFER */
-    
-    .offer{
+
+
+
+
+
+
+
+
+
+
+
+/* WHAT WE OFFER */
+
+.offer {
     background-image: url('../images/imagen\ empanadas.png');
     background-repeat: no-repeat;
     margin-left: -7.5em;
@@ -164,63 +189,87 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
-    
-    .offer__image {
+
+        .offer__whatWeOffer {
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+                &__title {
+                color: $light;
+                padding: .8em;
+                text-align: center;
+                font-size: $text-xxl;
+
+                }
+
+                &__text {
+                    color: $light;
+                    height: 70px;
+                    padding-left: 20em;
+                    padding-right: 20em;
+                    font-size: $text-sm;
+
+                    line-height: $sp-md;
+                    text-align: center;
+
+                }
+
+        
+           }
+
+
+        .offer__image {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 60%;
-    }
-    
-    .offer__image__item {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: $sp-sm;
-    }
-    
-    .offer__image__button__menu {
-        color: $primary;
-        font-size: $text-xs;
-        padding-left: $sp-xl;
-        padding-right: $sp-xl;
-        
-    }
-    
-    
-    .offer__whatWeOffer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       
-    
-    }
-    
-    .offer__whatWeOffer__title {
-        color: $light;
-        padding: .8em;
-        text-align: center;
-        font-size: $text-xxl;
-    
-    }
-    
-    .offer__whatWeOffer__text {
-        color: $light;
-        height: 70px;
-        padding-left: 20em;
-        padding-right: 20em;
-        font-size: $text-sm;
-        
-        line-height: $sp-md;
-        text-align: center;    
-    
-    }
-    
-    /* GET IN TOUCH */
-    
-    .touch {
+
+
+                &__item {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: $sp-sm;
+
+                                .offer__image__button__menu {
+                                    color: $primary;
+                                    font-size: $text-xs;
+                                    padding-left: $sp-xl;
+                                    padding-right: $sp-xl;
+
+                                }
+
+
+
+                }
+
+
+
+
+            }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GET IN TOUCH */
+
+.touch {
     background-image: url('../images/image\ 5.png');
     background-repeat: no-repeat;
     margin-left: -7.7em;
@@ -232,29 +281,34 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    
-    
-    
-    }
-    
-    .touch h2 { 
-        font-size: $text-xxl;
-        padding: .8em;
-        margin-top: 2em;
-        text-align: center;
-    
-    }
-    
-    .touch  p {
-        color: $light;
-        padding-left: 17em;
-        padding-right: 17em;
-        font-size: $text-sm;
-        
-        line-height: $sp-md;
-        text-align: center;
-    }
-    
 
 
-    
+
+& h2 {
+    font-size: $text-xxl;
+    padding: .8em;
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+
+
+& p {
+    color: $light;
+    padding-left: 17em;
+    padding-right: 17em;
+    font-size: $text-sm;
+
+    line-height: $sp-md;
+    text-align: center;
+}
+
+
+
+
+
+
+}
+
+
