@@ -1,0 +1,96 @@
+.banner__contactUs {
+    background-image: url('../images/image\ 9.png');
+    
+    @extend .bannerPages;
+    
+}
+
+$width: 100%;
+$red: #e00034;
+$white: #ffffff;
+
+.mainContactUs {
+
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+
+    .mainContactUs__information {
+
+        width: $width/2;
+       
+       
+        padding: $sp-md;
+        &__title{ 
+            display: flex;
+            justify-content: flex-start;
+            font-size: $text-md;
+            color: $secondary;
+            width: 100%;
+             margin-left: 10rem;
+
+             
+                   
+                            
+        }
+        
+        &__list {
+            width: inherit;
+            margin-left: 10rem;
+            padding-top: $sp-md;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+       
+
+    }
+
+    .mainContactUs__fillOut {
+        background-color: $red;
+        width: $width/2;
+        padding: $sp-md;
+        
+        height: 100vh;
+       
+        
+
+        &__title {
+            font-size: $text-xxl;
+            color: $light;
+            margin-right: 15rem;
+
+            
+
+    }
+
+            &__text {
+                color: $light;
+                font-size: $text-sm;
+                margin-right: 15rem;
+                padding-top: $sp-md;
+            }
+
+    }
+
+
+
+}
+
+@media screen and (max-with: 900px) { 
+
+    .mainContactUs {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+}
+
+
+
+    

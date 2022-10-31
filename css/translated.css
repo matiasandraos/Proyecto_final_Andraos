@@ -48,7 +48,7 @@ h3 {
 a:hover {
   color: #D2232A; }
 
-.bannerPages, .banner__about, .banner__carrers {
+.bannerPages, .banner__about, .banner__carrers, .banner__contactUs {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -57,7 +57,7 @@ a:hover {
   margin-right: 0;
   margin-left: 0%;
   margin-bottom: 5em; }
-  .bannerPages .banner__title, .banner__about .banner__title, .banner__carrers .banner__title {
+  .bannerPages .banner__title, .banner__about .banner__title, .banner__carrers .banner__title, .banner__contactUs .banner__title {
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
@@ -73,7 +73,8 @@ a:hover {
   .navbar {
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-bottom: 0; }
   .menu {
     justify-content: center;
     flex-wrap: wrap; }
@@ -100,17 +101,28 @@ a:hover {
     .carrers__description {
       font-size: 1.2em;
       color: #231F20;
-      padding-bottom: 1.6rem; }
+      padding-bottom: 1.6rem;
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; }
     .carrers__list {
       display: flex;
       flex-direction: row; }
       .carrers__list .carrers__list__item {
-        /*  width: 54rem;
+        /*   width: 54rem;
             height: 5rem; */
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+        /*  padding-bottom: $sp-md;
+           
+           cuando le agrego el paddin no me lee el flex direction column
+           */ }
+  .mainContactUS {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: small; } }
 
 /* PARTIALS */
 header {
@@ -208,12 +220,58 @@ header {
       justify-content: space-between;
       flex-wrap: wrap; }
 
+.banner__contactUs {
+  background-image: url("../images/image 9.png"); }
+
+.mainContactUs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh; }
+  .mainContactUs .mainContactUs__information {
+    width: 50%;
+    padding: 3.2rem; }
+    .mainContactUs .mainContactUs__information__title {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 1.6em;
+      color: #D2232A;
+      width: 100%;
+      margin-left: 10rem; }
+    .mainContactUs .mainContactUs__information__list {
+      width: inherit;
+      margin-left: 10rem;
+      padding-top: 3.2rem;
+      display: flex;
+      justify-content: space-between; }
+  .mainContactUs .mainContactUs__fillOut {
+    background-color: #e00034;
+    width: 50%;
+    padding: 3.2rem;
+    height: 100vh; }
+    .mainContactUs .mainContactUs__fillOut__title {
+      font-size: 4em;
+      color: #fff;
+      margin-right: 15rem; }
+    .mainContactUs .mainContactUs__fillOut__text {
+      color: #fff;
+      font-size: 1.2em;
+      margin-right: 15rem;
+      padding-top: 3.2rem; }
+
+@media screen and (max-with: 900px) {
+  .mainContactUs {
+    display: flex;
+    flex-direction: column; } }
+
 /* MEDIA QUERY */
 @media screen and (max-width: 850px) {
   .navbar {
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-bottom: 0; }
   .menu {
     justify-content: center;
     flex-wrap: wrap; }
@@ -240,17 +298,28 @@ header {
     .carrers__description {
       font-size: 1.2em;
       color: #231F20;
-      padding-bottom: 1.6rem; }
+      padding-bottom: 1.6rem;
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; }
     .carrers__list {
       display: flex;
       flex-direction: row; }
       .carrers__list .carrers__list__item {
-        /*  width: 54rem;
+        /*   width: 54rem;
             height: 5rem; */
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+        /*  padding-bottom: $sp-md;
+           
+           cuando le agrego el paddin no me lee el flex direction column
+           */ }
+  .mainContactUS {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: small; } }
 
 /* BANNER */
 .banner {

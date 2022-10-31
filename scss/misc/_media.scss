@@ -4,6 +4,7 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        padding-bottom: 0;
     }
 
     .menu{
@@ -45,6 +46,8 @@
             font-size: $text-sm;
             color: $primary;
             padding-bottom: $sp-sm;
+            padding-left: $sp-sm;
+            padding-right: $sp-sm;
 
         }
 
@@ -58,16 +61,34 @@
             
             .carrers__list__item {
 
-           /*  width: 54rem;
+          /*   width: 54rem;
             height: 5rem; */
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             flex-wrap: wrap;
+           /*  padding-bottom: $sp-md;
+           
+           cuando le agrego el paddin no me lee el flex direction column
+           */
 
 
          }
         
         
         }
-    } }
+    } 
+
+    .mainContactUS {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: small;
+    }
+
+
+
+
+
+
+}
