@@ -1,22 +1,6 @@
 .banner__about {
     background-image: url('../images/image\ 6.png');
-    @extend .generalBanner ;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0%;
-    margin-bottom: 5em;
-
-
-            .banner__titleAbout {
-
-               @include flex (row, no-wrap, center, center, no-gap);
-               
-                color: $light;
-                font-size: $text-xxl;
-                height: inherit;
-                font-family: $font-primary;
-
-            }
+    @extend .bannerPages ;
 
     }
     

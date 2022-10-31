@@ -1,6 +1,25 @@
-.generalBanner {
+
+.bannerPages {
+    
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 30em;
-}
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0%;
+    margin-bottom: 5em;
+
+
+            .banner__title {
+
+               @include flex (row, no-wrap, center, center, no-gap);
+               
+                color: $light;
+                font-size: $text-xxl;
+                height: inherit;
+                font-family: $font-primary;
+
+            }
+
+    }

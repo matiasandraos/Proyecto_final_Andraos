@@ -48,10 +48,32 @@ h3 {
 a:hover {
   color: #D2232A; }
 
-@media screen and (max-width: 800px) {
+.bannerPages, .banner__about, .banner__carrers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30em;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0%;
+  margin-bottom: 5em; }
+  .bannerPages .banner__title, .banner__about .banner__title, .banner__carrers .banner__title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: no-gap;
+    color: #fff;
+    font-size: 4em;
+    height: inherit;
+    font-family: Playball; }
+
+@media screen and (max-width: 850px) {
   .navbar {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
   .menu {
     justify-content: center;
     flex-wrap: wrap; }
@@ -63,13 +85,32 @@ a:hover {
     display: flex;
     flex-wrap: wrap; }
   .footer {
-    flex-wrap: wrap; } }
-
-.generalBanner, .banner__about, .banner {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 30em; }
+    flex-wrap: wrap; }
+  .carrers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: no-gap; }
+    .carrers__title {
+      font-size: 2.8em;
+      color: #231F20;
+      padding-bottom: 1.6rem; }
+    .carrers__description {
+      font-size: 1.2em;
+      color: #231F20;
+      padding-bottom: 1.6rem; }
+    .carrers__list {
+      display: flex;
+      flex-direction: row; }
+      .carrers__list .carrers__list__item {
+        /*  width: 54rem;
+            height: 5rem; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap; } }
 
 /* PARTIALS */
 header {
@@ -121,22 +162,7 @@ header {
 
 /* PAGES */
 .banner__about {
-  background-image: url("../images/image 6.png");
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0%;
-  margin-bottom: 5em; }
-  .banner__about .banner__titleAbout {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content: center;
-    align-items: center;
-    gap: no-gap;
-    color: #fff;
-    font-size: 4em;
-    height: inherit;
-    font-family: Playball; }
+  background-image: url("../images/image 6.png"); }
 
 .about {
   padding-bottom: 5em;
@@ -150,11 +176,44 @@ header {
     font-family: Fira Sans;
     line-height: 3.2rem; }
 
+/* .mainCarrers {
+    min-height: 100vh;
+} */
+.banner__carrers {
+  background-image: url("../images/image 8.png"); }
+
+.carrers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: no-gap; }
+  .carrers__title {
+    font-size: 4em;
+    color: #231F20;
+    padding-bottom: 3.2rem; }
+  .carrers__description {
+    font-size: 1.2em;
+    color: #231F20;
+    padding-bottom: 3.2rem; }
+  .carrers__list {
+    display: flex;
+    flex-direction: row; }
+    .carrers__list .carrers__list__item {
+      width: 54rem;
+      height: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+
 /* MEDIA QUERY */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .navbar {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
   .menu {
     justify-content: center;
     flex-wrap: wrap; }
@@ -166,13 +225,42 @@ header {
     display: flex;
     flex-wrap: wrap; }
   .footer {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .carrers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: no-gap; }
+    .carrers__title {
+      font-size: 2.8em;
+      color: #231F20;
+      padding-bottom: 1.6rem; }
+    .carrers__description {
+      font-size: 1.2em;
+      color: #231F20;
+      padding-bottom: 1.6rem; }
+    .carrers__list {
+      display: flex;
+      flex-direction: row; }
+      .carrers__list .carrers__list__item {
+        /*  width: 54rem;
+            height: 5rem; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap; } }
 
 /* BANNER */
 .banner {
   background-image: url("../images/imagen banner home.png");
   margin: none;
-  margin-left: 0%; }
+  margin-left: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px; }
   .banner .banner__title {
     display: flex;
     flex-direction: column;

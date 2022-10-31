@@ -1,0 +1,58 @@
+/* .mainCarrers {
+    min-height: 100vh;
+} */
+
+.banner__carrers {
+    background-image: url('../images/image\ 8.png');
+    @extend .bannerPages ;
+
+    }
+
+.carrers {
+
+    @include flex(column, wrap, center, center, no-gap);
+
+
+        &__title {
+            font-size: $text-xxl;
+            color: $primary;
+            padding-bottom: $sp-md
+        }
+
+        &__description{
+            font-size: $text-sm;
+            color: $primary;
+            padding-bottom: $sp-md;
+
+        }
+
+        &__list {
+
+            
+            display: flex;
+            flex-direction: row;
+            
+            
+            
+            .carrers__list__item {
+
+            width: 54rem;
+            height: 5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+        }
+
+
+
+        }
+
+      
+
+
+}
+
+
