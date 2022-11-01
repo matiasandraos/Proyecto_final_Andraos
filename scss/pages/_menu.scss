@@ -1,0 +1,81 @@
+.mainMenu {
+
+/* BANNER */
+
+    .mainMenu__banner {
+    background-image: url('../images/image\ 10.png');
+    @extend .bannerPages ;
+    
+    }
+
+/* PARRAFO PRINCIPAL */
+
+    .mainMenu__principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+
+
+        /* TITULO */
+
+
+        &__title { 
+            font-size: $text-xxl;
+            color: $primary;
+            @include padding(10rem, 0, 5rem,0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &__text {
+            font-size: $text-md;
+            color: $primary;
+            @include padding(0, 13rem, 0, 13rem);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+           
+            
+            border-color: $secondary;
+
+
+
+        }     
+
+    /* IMAGENES DEL MENU */
+
+    .mainMenu__carta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include padding(10rem, 0, 10rem, 0);
+
+
+        &__text{
+            font-size: $text-md;
+            color: $secondary;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+
+        }
+      
+
+    }
+
+
+
+
+
+
+
+
+}
+
+}

@@ -10,3 +10,15 @@
     
 }
 
+
+@mixin padding ($top, $rigth, $bottom, $left) {
+
+    padding: padding;
+    padding-top: $top;
+    padding-right: $rigth;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+    
+
+
