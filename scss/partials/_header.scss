@@ -3,7 +3,7 @@ header {
     background-color: $primary;
    /*  padding: $sp-xs; */
    
-    height: 6em;
+   /*  height: 6em; */
     margin-top: 0;
     
 
@@ -15,7 +15,7 @@ header {
 .navbar{
     display: flex;
     height: inherit;
-    height: 6em;
+    
     justify-content: space-between;
     background-color: $primary;
     margin-top: auto;

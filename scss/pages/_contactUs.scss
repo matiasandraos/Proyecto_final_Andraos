@@ -16,6 +16,7 @@ $white: #ffffff;
     flex-direction: row;
     flex-wrap: wrap;
     height: 100vh;
+    margin-bottom: 2.4em;
 
     .mainContactUs__information {
 
@@ -53,8 +54,10 @@ $white: #ffffff;
         background-color: $red;
         width: $width/2;
         padding: $sp-md;
-        
         height: 100vh;
+        
+        
+      
        
         
 
@@ -85,7 +88,7 @@ $white: #ffffff;
     .mainContactUs {
         display: flex;
         flex-direction: column;
-        
+
         
     }
 
