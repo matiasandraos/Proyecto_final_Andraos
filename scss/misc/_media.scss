@@ -31,53 +31,7 @@
 
 
 
-.carrers {
 
-    @include flex(column, wrap, center, center, no-gap);
-
-
-        &__title {
-            font-size: $text-xl;
-            color: $primary;
-            padding-bottom: $sp-sm
-        }
-
-        &__description{
-            font-size: $text-sm;
-            color: $primary;
-            padding-bottom: $sp-sm;
-            padding-left: $sp-sm;
-            padding-right: $sp-sm;
-
-        }
-
-        &__list {
-
-            
-            display: flex;
-            flex-direction: row;
-            
-            
-            
-            .carrers__list__item {
-
-          /*   width: 54rem;
-            height: 5rem; */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            flex-wrap: wrap;
-           /*  padding-bottom: $sp-md;
-           
-           cuando le agrego el paddin no me lee el flex direction column
-           */
-
-
-         }
-        
-        
-        }
-    } 
 
     .mainContactUS {
         display: flex;
@@ -94,3 +48,338 @@
 }
 
 
+
+/* CARRERS */
+
+
+@media screen and (max-width: 768px) {
+
+    .carrers {
+
+        @include flex(column, wrap, center, center, no-gap);
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+
+        &__title {
+            font-size: $text-xl;
+            color: $primary;
+            padding-bottom: $sp-md
+        }
+
+        &__description {
+            font-size: $text-xs;
+            color: $primary;
+            padding-bottom: $sp-md;
+
+        }
+
+        &__puestos {
+
+
+            display: flex;
+            flex-direction: row;
+
+
+
+
+            .carrers__puestos__list {
+                font-size: $text-sm;
+                /*   width: 54rem;
+                height: 5rem; */
+                @include padding(0, 8rem, 0, 8rem);
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                &__item {
+
+                    @include padding(0, 2rem, 0, 2rem);
+                    display: flex;
+                    flex-wrap: wrap
+                }
+
+
+
+
+            }
+
+
+        }
+
+
+
+
+
+    }
+    .carrers__form {
+        @include padding(5rem,10rem,5rem,10rem);
+
+        .carrers__form__title {
+            font-size: $text-md;
+            color: rgba(36, 36, 36, 0.984);
+            text-align: center;
+        }
+
+
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .carrers {
+
+        @include flex(column, wrap, center, center, no-gap);
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        &__title {
+            font-size: $text-lg;
+            color: $primary;
+            padding-bottom: $sp-md
+        }
+
+        &__description {
+            font-size: $text-sm;
+            color: $primary;
+            padding-bottom: $sp-md;
+
+        }
+
+        &__puestos {
+
+
+            display: flex;
+            flex-direction: row;
+
+
+
+
+            .carrers__puestos__list {
+                font-size: $text-sm;
+                /*   width: 54rem;
+            height: 5rem; */
+                @include padding(0, 5rem, 0, 5rem);
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                &__item {
+
+                    @include padding(0, 2rem, 0, 2rem);
+                    display: flex;
+                    flex-wrap: wrap
+                }
+
+
+
+
+            }
+        }
+    }
+
+    .carrers__form {
+        @include padding(5rem,10rem,5rem,10rem);
+
+        .carrers__form__title {
+            font-size: $text-sm;
+            color: rgba(36, 36, 36, 0.984);
+            text-align: center;
+        }
+
+
+    }
+
+}
+
+/* OUR MENU*/
+
+
+@media screen and (max-width: 768px) {
+
+    .mainMenu {
+
+        /* BANNER */
+        
+          
+        
+        /* PARRAFO PRINCIPAL */
+        
+            .mainMenu__principal {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 2rem;
+        
+        
+                /* TITULO */
+        
+        
+                &__title { 
+                    font-size: $text-lg;
+                    color: $primary;
+                    @include padding(8rem, 0, 3rem,0);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                }
+        
+                &__text {
+                    font-size: $text-sm;
+                    color: $primary;
+                    @include padding(0, 10rem, 0, 10rem);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                   
+                    
+                    border-color: $secondary;
+        
+        
+        
+                }     
+        
+            /* IMAGENES DEL MENU */
+        
+            .mainMenu__carta {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @include padding(8rem, 0, 8rem, 0);
+                
+
+            .mainMenu__carta__selector{
+                    width: 50em;
+                    height: 30em;
+
+                }
+        
+                &__text{
+                    font-size: $text-sm;
+                    color: $secondary;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+        
+        
+                }
+              
+        
+            }
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+        
+        }
+    
+
+    
+}
+
+
+@media screen and (max-width:576px) {
+
+    .mainMenu {
+
+        /* BANNER */
+        
+          
+        
+        /* PARRAFO PRINCIPAL */
+        
+            .mainMenu__principal {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 2rem;
+        
+        
+                /* TITULO */
+        
+        
+                &__title { 
+                    font-size: $text-md;
+                    color: $primary;
+                    @include padding(5rem, 0, 2rem,0);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                }
+        
+                &__text {
+                    font-size: $text-xs;
+                    color: $primary;
+                    @include padding(0, 8rem, 0, 8rem);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                   
+                    
+                    border-color: $secondary;
+        
+        
+        
+                }     
+        
+            /* IMAGENES DEL MENU */
+        
+            .mainMenu__carta {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @include padding(6rem, 0, 6rem, 0);
+
+                .mainMenu__carta__selector{
+                    width: 25em;
+                    height: 15em;
+
+                }
+                
+        
+                &__text{
+                    font-size: $text-xs;
+                    color: $secondary;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+        
+        
+                }
+              
+        
+            }
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+        
+        }
+    
+}

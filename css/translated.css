@@ -87,42 +87,233 @@ a:hover {
     flex-wrap: wrap; }
   .footer {
     flex-wrap: wrap; }
+  .mainContactUS {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: small; } }
+
+/* CARRERS */
+@media screen and (max-width: 768px) {
   .carrers {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: no-gap; }
+    gap: no-gap;
+    padding-top: 8rem;
+    padding-bottom: 8rem; }
     .carrers__title {
       font-size: 2.8em;
       color: #231F20;
-      padding-bottom: 1.6rem; }
+      padding-bottom: 3.2rem; }
     .carrers__description {
-      font-size: 1.2em;
+      font-size: 0.8em;
       color: #231F20;
-      padding-bottom: 1.6rem;
-      padding-left: 1.6rem;
-      padding-right: 1.6rem; }
-    .carrers__list {
+      padding-bottom: 3.2rem; }
+    .carrers__puestos {
       display: flex;
       flex-direction: row; }
-      .carrers__list .carrers__list__item {
+      .carrers__puestos .carrers__puestos__list {
+        font-size: 1.2em;
         /*   width: 54rem;
-            height: 5rem; */
+                height: 5rem; */
+        padding: padding;
+        padding-top: 0;
+        padding-right: 8rem;
+        padding-bottom: 0;
+        padding-left: 8rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        /*  padding-bottom: $sp-md;
-           
-           cuando le agrego el paddin no me lee el flex direction column
-           */ }
-  .mainContactUS {
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .carrers__puestos .carrers__puestos__list__item {
+          padding: padding;
+          padding-top: 0;
+          padding-right: 2rem;
+          padding-bottom: 0;
+          padding-left: 2rem;
+          display: flex;
+          flex-wrap: wrap; }
+  .carrers__form {
+    padding: padding;
+    padding-top: 5rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem; }
+    .carrers__form .carrers__form__title {
+      font-size: 1.6em;
+      color: rgba(36, 36, 36, 0.984);
+      text-align: center; } }
+
+@media screen and (max-width: 576px) {
+  .carrers {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: small; } }
+    justify-content: center;
+    align-items: center;
+    gap: no-gap;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    .carrers__title {
+      font-size: 2.4em;
+      color: #231F20;
+      padding-bottom: 3.2rem; }
+    .carrers__description {
+      font-size: 1.2em;
+      color: #231F20;
+      padding-bottom: 3.2rem; }
+    .carrers__puestos {
+      display: flex;
+      flex-direction: row; }
+      .carrers__puestos .carrers__puestos__list {
+        font-size: 1.2em;
+        /*   width: 54rem;
+            height: 5rem; */
+        padding: padding;
+        padding-top: 0;
+        padding-right: 5rem;
+        padding-bottom: 0;
+        padding-left: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .carrers__puestos .carrers__puestos__list__item {
+          padding: padding;
+          padding-top: 0;
+          padding-right: 2rem;
+          padding-bottom: 0;
+          padding-left: 2rem;
+          display: flex;
+          flex-wrap: wrap; }
+  .carrers__form {
+    padding: padding;
+    padding-top: 5rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem; }
+    .carrers__form .carrers__form__title {
+      font-size: 1.2em;
+      color: rgba(36, 36, 36, 0.984);
+      text-align: center; } }
+
+/* OUR MENU*/
+@media screen and (max-width: 768px) {
+  .mainMenu {
+    /* BANNER */
+    /* PARRAFO PRINCIPAL */ }
+    .mainMenu .mainMenu__principal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      /* TITULO */
+      /* IMAGENES DEL MENU */ }
+      .mainMenu .mainMenu__principal__title {
+        font-size: 2.4em;
+        color: #231F20;
+        padding: padding;
+        padding-top: 8rem;
+        padding-right: 0;
+        padding-bottom: 3rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .mainMenu .mainMenu__principal__text {
+        font-size: 1.2em;
+        color: #231F20;
+        padding: padding;
+        padding-top: 0;
+        padding-right: 10rem;
+        padding-bottom: 0;
+        padding-left: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-color: #D2232A; }
+      .mainMenu .mainMenu__principal .mainMenu__carta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: padding;
+        padding-top: 8rem;
+        padding-right: 0;
+        padding-bottom: 8rem;
+        padding-left: 0; }
+        .mainMenu .mainMenu__principal .mainMenu__carta .mainMenu__carta__selector {
+          width: 50em;
+          height: 30em; }
+        .mainMenu .mainMenu__principal .mainMenu__carta__text {
+          font-size: 1.2em;
+          color: #D2232A;
+          display: flex;
+          justify-content: center;
+          text-align: center; } }
+
+@media screen and (max-width: 576px) {
+  .mainMenu {
+    /* BANNER */
+    /* PARRAFO PRINCIPAL */ }
+    .mainMenu .mainMenu__principal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      /* TITULO */
+      /* IMAGENES DEL MENU */ }
+      .mainMenu .mainMenu__principal__title {
+        font-size: 1.6em;
+        color: #231F20;
+        padding: padding;
+        padding-top: 5rem;
+        padding-right: 0;
+        padding-bottom: 2rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .mainMenu .mainMenu__principal__text {
+        font-size: 0.8em;
+        color: #231F20;
+        padding: padding;
+        padding-top: 0;
+        padding-right: 8rem;
+        padding-bottom: 0;
+        padding-left: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-color: #D2232A; }
+      .mainMenu .mainMenu__principal .mainMenu__carta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: padding;
+        padding-top: 6rem;
+        padding-right: 0;
+        padding-bottom: 6rem;
+        padding-left: 0; }
+        .mainMenu .mainMenu__principal .mainMenu__carta .mainMenu__carta__selector {
+          width: 25em;
+          height: 15em; }
+        .mainMenu .mainMenu__principal .mainMenu__carta__text {
+          font-size: 0.8em;
+          color: #D2232A;
+          display: flex;
+          justify-content: center;
+          text-align: center; } }
 
 /* PARTIALS */
 header {
@@ -365,42 +556,233 @@ header {
     flex-wrap: wrap; }
   .footer {
     flex-wrap: wrap; }
+  .mainContactUS {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: small; } }
+
+/* CARRERS */
+@media screen and (max-width: 768px) {
   .carrers {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: no-gap; }
+    gap: no-gap;
+    padding-top: 8rem;
+    padding-bottom: 8rem; }
     .carrers__title {
       font-size: 2.8em;
       color: #231F20;
-      padding-bottom: 1.6rem; }
+      padding-bottom: 3.2rem; }
     .carrers__description {
-      font-size: 1.2em;
+      font-size: 0.8em;
       color: #231F20;
-      padding-bottom: 1.6rem;
-      padding-left: 1.6rem;
-      padding-right: 1.6rem; }
-    .carrers__list {
+      padding-bottom: 3.2rem; }
+    .carrers__puestos {
       display: flex;
       flex-direction: row; }
-      .carrers__list .carrers__list__item {
+      .carrers__puestos .carrers__puestos__list {
+        font-size: 1.2em;
         /*   width: 54rem;
-            height: 5rem; */
+                height: 5rem; */
+        padding: padding;
+        padding-top: 0;
+        padding-right: 8rem;
+        padding-bottom: 0;
+        padding-left: 8rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        /*  padding-bottom: $sp-md;
-           
-           cuando le agrego el paddin no me lee el flex direction column
-           */ }
-  .mainContactUS {
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .carrers__puestos .carrers__puestos__list__item {
+          padding: padding;
+          padding-top: 0;
+          padding-right: 2rem;
+          padding-bottom: 0;
+          padding-left: 2rem;
+          display: flex;
+          flex-wrap: wrap; }
+  .carrers__form {
+    padding: padding;
+    padding-top: 5rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem; }
+    .carrers__form .carrers__form__title {
+      font-size: 1.6em;
+      color: rgba(36, 36, 36, 0.984);
+      text-align: center; } }
+
+@media screen and (max-width: 576px) {
+  .carrers {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: small; } }
+    justify-content: center;
+    align-items: center;
+    gap: no-gap;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    .carrers__title {
+      font-size: 2.4em;
+      color: #231F20;
+      padding-bottom: 3.2rem; }
+    .carrers__description {
+      font-size: 1.2em;
+      color: #231F20;
+      padding-bottom: 3.2rem; }
+    .carrers__puestos {
+      display: flex;
+      flex-direction: row; }
+      .carrers__puestos .carrers__puestos__list {
+        font-size: 1.2em;
+        /*   width: 54rem;
+            height: 5rem; */
+        padding: padding;
+        padding-top: 0;
+        padding-right: 5rem;
+        padding-bottom: 0;
+        padding-left: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .carrers__puestos .carrers__puestos__list__item {
+          padding: padding;
+          padding-top: 0;
+          padding-right: 2rem;
+          padding-bottom: 0;
+          padding-left: 2rem;
+          display: flex;
+          flex-wrap: wrap; }
+  .carrers__form {
+    padding: padding;
+    padding-top: 5rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem; }
+    .carrers__form .carrers__form__title {
+      font-size: 1.2em;
+      color: rgba(36, 36, 36, 0.984);
+      text-align: center; } }
+
+/* OUR MENU*/
+@media screen and (max-width: 768px) {
+  .mainMenu {
+    /* BANNER */
+    /* PARRAFO PRINCIPAL */ }
+    .mainMenu .mainMenu__principal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      /* TITULO */
+      /* IMAGENES DEL MENU */ }
+      .mainMenu .mainMenu__principal__title {
+        font-size: 2.4em;
+        color: #231F20;
+        padding: padding;
+        padding-top: 8rem;
+        padding-right: 0;
+        padding-bottom: 3rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .mainMenu .mainMenu__principal__text {
+        font-size: 1.2em;
+        color: #231F20;
+        padding: padding;
+        padding-top: 0;
+        padding-right: 10rem;
+        padding-bottom: 0;
+        padding-left: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-color: #D2232A; }
+      .mainMenu .mainMenu__principal .mainMenu__carta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: padding;
+        padding-top: 8rem;
+        padding-right: 0;
+        padding-bottom: 8rem;
+        padding-left: 0; }
+        .mainMenu .mainMenu__principal .mainMenu__carta .mainMenu__carta__selector {
+          width: 50em;
+          height: 30em; }
+        .mainMenu .mainMenu__principal .mainMenu__carta__text {
+          font-size: 1.2em;
+          color: #D2232A;
+          display: flex;
+          justify-content: center;
+          text-align: center; } }
+
+@media screen and (max-width: 576px) {
+  .mainMenu {
+    /* BANNER */
+    /* PARRAFO PRINCIPAL */ }
+    .mainMenu .mainMenu__principal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      /* TITULO */
+      /* IMAGENES DEL MENU */ }
+      .mainMenu .mainMenu__principal__title {
+        font-size: 1.6em;
+        color: #231F20;
+        padding: padding;
+        padding-top: 5rem;
+        padding-right: 0;
+        padding-bottom: 2rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .mainMenu .mainMenu__principal__text {
+        font-size: 0.8em;
+        color: #231F20;
+        padding: padding;
+        padding-top: 0;
+        padding-right: 8rem;
+        padding-bottom: 0;
+        padding-left: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-color: #D2232A; }
+      .mainMenu .mainMenu__principal .mainMenu__carta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: padding;
+        padding-top: 6rem;
+        padding-right: 0;
+        padding-bottom: 6rem;
+        padding-left: 0; }
+        .mainMenu .mainMenu__principal .mainMenu__carta .mainMenu__carta__selector {
+          width: 25em;
+          height: 15em; }
+        .mainMenu .mainMenu__principal .mainMenu__carta__text {
+          font-size: 0.8em;
+          color: #D2232A;
+          display: flex;
+          justify-content: center;
+          text-align: center; } }
 
 /* BANNER */
 .banner {
