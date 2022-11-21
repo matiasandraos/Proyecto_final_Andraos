@@ -69,7 +69,28 @@ a:hover {
     height: inherit;
     font-family: Playball; }
 
-@media screen and (max-width: 850px) {
+/* NAVBAR */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 0; }
+  .navbar__link__img {
+    width: 4rem;
+    height: 6rem; }
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap; }
+    .menu .menu__item {
+      padding: 0.1rem; }
+    .menu .menu__link {
+      font-size: 1.2em; }
+  /* FOOTER */
+  .footer {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 576px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -78,23 +99,37 @@ a:hover {
   .menu {
     justify-content: center;
     flex-wrap: wrap; }
-  .story {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-  .story__provide {
-    display: flex;
-    flex-wrap: wrap; }
-  .footer {
-    flex-wrap: wrap; }
-  .mainContactUS {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: small; } }
+    .menu .menu__item {
+      padding: 0.1rem; }
+    .menu .menu__link {
+      font-size: 0.8em; }
+  .navbar__link__img {
+    width: 1rem;
+    height: 4.5rem; } }
 
 /* CARRERS */
 @media screen and (max-width: 768px) {
+  .banner__carrers {
+    background-image: url("../images/image 8.png");
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20em;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0%;
+    /*   margin-bottom: 5em; */ }
+    .banner__carrers .banner__title {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: center;
+      gap: no-gap;
+      color: #fff;
+      font-size: 2.8em;
+      height: inherit;
+      font-family: Playball; }
   .carrers {
     display: flex;
     flex-direction: column;
@@ -138,18 +173,39 @@ a:hover {
           padding-left: 2rem;
           display: flex;
           flex-wrap: wrap; }
-  .carrers__form {
-    padding: padding;
-    padding-top: 5rem;
-    padding-right: 10rem;
-    padding-bottom: 5rem;
-    padding-left: 10rem; }
-    .carrers__form .carrers__form__title {
-      font-size: 1.6em;
-      color: rgba(36, 36, 36, 0.984);
-      text-align: center; } }
+    .carrers .carrers__form {
+      padding: padding;
+      padding-top: 4rem;
+      padding-right: 8rem;
+      padding-bottom: 4rem;
+      padding-left: 8rem; }
+      .carrers .carrers__form .carrers__form__title {
+        font-size: 1.2em;
+        color: rgba(36, 36, 36, 0.984);
+        text-align: center; } }
 
 @media screen and (max-width: 576px) {
+  .banner__carrers {
+    background-image: url("../images/image 8.png");
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12em;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0%;
+    /*   margin-bottom: 5em; */ }
+    .banner__carrers .banner__title {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: center;
+      gap: no-gap;
+      color: #fff;
+      font-size: 2.4em;
+      height: inherit;
+      font-family: Playball; }
   .carrers {
     display: flex;
     flex-direction: column;
@@ -165,8 +221,11 @@ a:hover {
       padding-bottom: 3.2rem; }
     .carrers__description {
       font-size: 1.2em;
+      text-align: center;
       color: #231F20;
-      padding-bottom: 3.2rem; }
+      padding-bottom: 3.2rem;
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; }
     .carrers__puestos {
       display: flex;
       flex-direction: row; }
@@ -192,15 +251,12 @@ a:hover {
           padding-bottom: 0;
           padding-left: 2rem;
           display: flex;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+          font-size: 1.2em; }
   .carrers__form {
-    padding: padding;
-    padding-top: 5rem;
-    padding-right: 10rem;
-    padding-bottom: 5rem;
-    padding-left: 10rem; }
+    /* @include padding(0.5rem, 2rem, 0.5rem, 2rem); */ }
     .carrers__form .carrers__form__title {
-      font-size: 1.2em;
+      font-size: 0.8em;
       color: rgba(36, 36, 36, 0.984);
       text-align: center; } }
 
@@ -538,7 +594,28 @@ header {
         text-align: center; }
 
 /* MEDIA QUERY */
-@media screen and (max-width: 850px) {
+/* NAVBAR */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 0; }
+  .navbar__link__img {
+    width: 4rem;
+    height: 6rem; }
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap; }
+    .menu .menu__item {
+      padding: 0.1rem; }
+    .menu .menu__link {
+      font-size: 1.2em; }
+  /* FOOTER */
+  .footer {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 576px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -547,23 +624,37 @@ header {
   .menu {
     justify-content: center;
     flex-wrap: wrap; }
-  .story {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-  .story__provide {
-    display: flex;
-    flex-wrap: wrap; }
-  .footer {
-    flex-wrap: wrap; }
-  .mainContactUS {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: small; } }
+    .menu .menu__item {
+      padding: 0.1rem; }
+    .menu .menu__link {
+      font-size: 0.8em; }
+  .navbar__link__img {
+    width: 1rem;
+    height: 4.5rem; } }
 
 /* CARRERS */
 @media screen and (max-width: 768px) {
+  .banner__carrers {
+    background-image: url("../images/image 8.png");
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20em;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0%;
+    /*   margin-bottom: 5em; */ }
+    .banner__carrers .banner__title {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: center;
+      gap: no-gap;
+      color: #fff;
+      font-size: 2.8em;
+      height: inherit;
+      font-family: Playball; }
   .carrers {
     display: flex;
     flex-direction: column;
@@ -607,18 +698,39 @@ header {
           padding-left: 2rem;
           display: flex;
           flex-wrap: wrap; }
-  .carrers__form {
-    padding: padding;
-    padding-top: 5rem;
-    padding-right: 10rem;
-    padding-bottom: 5rem;
-    padding-left: 10rem; }
-    .carrers__form .carrers__form__title {
-      font-size: 1.6em;
-      color: rgba(36, 36, 36, 0.984);
-      text-align: center; } }
+    .carrers .carrers__form {
+      padding: padding;
+      padding-top: 4rem;
+      padding-right: 8rem;
+      padding-bottom: 4rem;
+      padding-left: 8rem; }
+      .carrers .carrers__form .carrers__form__title {
+        font-size: 1.2em;
+        color: rgba(36, 36, 36, 0.984);
+        text-align: center; } }
 
 @media screen and (max-width: 576px) {
+  .banner__carrers {
+    background-image: url("../images/image 8.png");
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12em;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0%;
+    /*   margin-bottom: 5em; */ }
+    .banner__carrers .banner__title {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: center;
+      gap: no-gap;
+      color: #fff;
+      font-size: 2.4em;
+      height: inherit;
+      font-family: Playball; }
   .carrers {
     display: flex;
     flex-direction: column;
@@ -634,8 +746,11 @@ header {
       padding-bottom: 3.2rem; }
     .carrers__description {
       font-size: 1.2em;
+      text-align: center;
       color: #231F20;
-      padding-bottom: 3.2rem; }
+      padding-bottom: 3.2rem;
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; }
     .carrers__puestos {
       display: flex;
       flex-direction: row; }
@@ -661,15 +776,12 @@ header {
           padding-bottom: 0;
           padding-left: 2rem;
           display: flex;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+          font-size: 1.2em; }
   .carrers__form {
-    padding: padding;
-    padding-top: 5rem;
-    padding-right: 10rem;
-    padding-bottom: 5rem;
-    padding-left: 10rem; }
+    /* @include padding(0.5rem, 2rem, 0.5rem, 2rem); */ }
     .carrers__form .carrers__form__title {
-      font-size: 1.2em;
+      font-size: 0.8em;
       color: rgba(36, 36, 36, 0.984);
       text-align: center; } }
 
