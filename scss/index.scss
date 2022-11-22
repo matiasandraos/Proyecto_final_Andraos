@@ -290,14 +290,16 @@
 
             .offer__image__button__menu {
                 color: $primary;
-                font-size: $text-xs;
-                padding-left: $sp-xl;
-                padding-right: $sp-xl;
+                font-size: $text-sm;
+              
 
 
             }
 
-
+            .button2 {
+                width: 15em;
+                height: 2em;
+            }
 
         }
 
@@ -802,8 +804,8 @@
                 .offer__image__button__menu {
                     color: $primary;
                     font-size: $text-xs;
-                    padding-left: $sp-lg;
-                    padding-right: $sp-lg;
+                    padding-left: $sp-md;
+                    padding-right: $sp-md;
 
                 }
 

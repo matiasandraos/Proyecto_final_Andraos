@@ -1004,9 +1004,10 @@ header {
         font-size: 2.4em; }
       .offer .offer__image__item .offer__image__button__menu {
         color: #231F20;
-        font-size: 0.8em;
-        padding-left: 8rem;
-        padding-right: 8rem; }
+        font-size: 1.2em; }
+      .offer .offer__image__item .button2 {
+        width: 15em;
+        height: 2em; }
 
 /* GET IN TOUCH */
 .touch {
@@ -1270,8 +1271,8 @@ header {
         .offer .offer__image .offer__image__item .offer__image__button__menu {
           color: #231F20;
           font-size: 0.8em;
-          padding-left: 5rem;
-          padding-right: 5rem; }
+          padding-left: 3.2rem;
+          padding-right: 3.2rem; }
   .touch {
     background-image: url("../images/image 5.png");
     background-repeat: no-repeat;
