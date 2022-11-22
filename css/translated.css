@@ -108,10 +108,12 @@ header {
   background-color: black;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   height: 100%;
   height: auto;
   padding-bottom: 3em;
+  width: 100%;
   /*     margin-top: -2em;
     padding-top: 3em;
     padding-left: 3em; */ }
@@ -442,31 +444,37 @@ header {
   /* FOOTER */ }
 
 @media screen and (max-width: 768px) and (max-width: 768px) {
-  .footer .footer__contact__title {
-    font-size: 1.6em; }
-  .footer .footer__contact__text {
-    font-size: 0.8em; }
-  .footer .footer__quickLinks__title {
-    font-size: 1.6em; }
-  .footer .footer__quickLinks__list {
-    font-size: 0.8em; }
-  .footer .footer__locateUs__title {
-    font-size: 1.6em; } }
+  .footer {
+    display: flex;
+    flex-direction: column; }
+    .footer .footer__contact__title {
+      font-size: 1.6em; }
+    .footer .footer__contact__text {
+      font-size: 0.8em; }
+    .footer .footer__quickLinks__title {
+      font-size: 1.6em; }
+    .footer .footer__quickLinks__list {
+      font-size: 0.8em; }
+    .footer .footer__locateUs__title {
+      font-size: 1.6em; } }
 
 @media screen and (max-width: 768px) {
   /* 576 576  576 */ }
 
 @media screen and (max-width: 768px) and (max-width: 576px) {
-  .footer .footer__contact__title {
-    font-size: 1.6em; }
-  .footer .footer__contact__text {
-    font-size: 0.8em; }
-  .footer .footer__quickLinks__title {
-    font-size: 1.6em; }
-  .footer .footer__quickLinks__list {
-    font-size: 0.8em; }
-  .footer .footer__locateUs__title {
-    font-size: 1.6em; } }
+  .footer {
+    display: flex;
+    flex-direction: column; }
+    .footer .footer__contact__title {
+      font-size: 1.6em; }
+    .footer .footer__contact__text {
+      font-size: 0.8em; }
+    .footer .footer__quickLinks__title {
+      font-size: 1.6em; }
+    .footer .footer__quickLinks__list {
+      font-size: 0.8em; }
+    .footer .footer__locateUs__title {
+      font-size: 1.6em; } }
 
 /* CARRERS */
 /* CARRERS */
@@ -862,63 +870,77 @@ header {
         font-size: 0.8em; } }
 
 /* BANNER */
-.banner {
+.bannerPrincipal {
   background-image: url("../images/imagen banner home.png");
   margin: none;
   margin-left: 0%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
-  height: 500px; }
-  .banner .banner__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    height: 500px;
+  height: 40em; }
+  .bannerPrincipal .bannerPrincipal__title {
     padding: 2em;
     font-size: 3.2rem; }
-
-.banner__title2 {
-  color: #fff; }
+    .bannerPrincipal .bannerPrincipal__title .bannerPrincipal__title2 {
+      color: #fff; }
 
 .banner__foto {
   display: flex;
   justify-content: center;
   z-index: -2;
-  max-width: auto; }
+  /* max-width: auto; */ }
 
 /* OUR HISTORY */
 .story {
   background-color: #fff;
-  /* display: flex;
-        flex-direction: column; */
   padding: 3em;
   margin-top: 0%; }
-  .story__ourStory__title {
-    color: #231F20;
-    padding: 1em;
-    font-size: 4em; }
-  .story__ourStory .story__text {
-    color: #231F20;
-    height: 150px;
-    padding-left: 17em;
-    padding-right: 17em;
-    font-size: 1.2em;
-    line-height: 3.2rem;
-    text-align: center; }
-  .story .story__provide .story__provide__title {
-    color: #D2232A;
-    padding: 1.6rem;
-    padding-left: 1em;
-    color: #D2232A; }
-  .story .story__provide .story__text {
-    color: #231F20;
-    padding-left: 3em;
-    font-size: 1.2em;
-    line-height: 3.2rem; }
-  .story .titulo__negro {
-    color: #231F20; }
+  .story .story__ourStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5em;
+    padding-right: 5em; }
+    .story .story__ourStory__title {
+      color: #231F20;
+      padding-top: .5em;
+      padding-bottom: 0.5em;
+      font-size: 4em; }
+    .story .story__ourStory .story__text {
+      color: #231F20;
+      padding-left: 16em;
+      padding-right: 16em;
+      font-size: 1.2em;
+      line-height: 3.2rem;
+      text-align: center; }
+  .story .story__provide {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    justify-content: center; }
+    .story .story__provide .story__provide__img {
+      padding: .5em;
+      /* .story__provide__img__item {
+                 height: 30em;
+                 width: 40em;
+               
+            } */ }
+    .story .story__provide .story__provide__sectionImg .story__provide__sectionImg__title {
+      color: #D2232A;
+      color: #D2232A;
+      padding-left: 1em;
+      padding-right: 4em; }
+    .story .story__provide .story__provide__sectionImg .story__provide__sectionImg__text {
+      color: #231F20;
+      padding-left: 2em;
+      padding-right: 4em;
+      font-size: 1.2em;
+      line-height: 3.2rem; }
+    .story .story__provide .titulo__negro {
+      color: #231F20; }
 
 /* .story__ourStory {
         display: flex;
@@ -942,8 +964,7 @@ header {
 .offer {
   background-image: url("../images/imagen empanadas.png");
   background-repeat: no-repeat;
-  margin-left: -7.5em;
-  margin-right: -7.5em;
+  width: 100%;
   height: 60em;
   display: flex;
   flex-direction: column;
@@ -953,7 +974,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 6em; }
     .offer .offer__whatWeOffer__title {
       color: #fff;
       padding: .8em;
@@ -962,8 +984,8 @@ header {
     .offer .offer__whatWeOffer__text {
       color: #fff;
       height: 70px;
-      padding-left: 20em;
-      padding-right: 20em;
+      padding-left: 25em;
+      padding-right: 25em;
       font-size: 1.2em;
       line-height: 3.2rem;
       text-align: center; }
@@ -977,6 +999,9 @@ header {
       flex-direction: column;
       text-align: center;
       padding: 1.6rem; }
+      .offer .offer__image__item .offer__image__item__title {
+        font-family: playball;
+        font-size: 2.4em; }
       .offer .offer__image__item .offer__image__button__menu {
         color: #231F20;
         font-size: 0.8em;
@@ -987,8 +1012,7 @@ header {
 .touch {
   background-image: url("../images/image 5.png");
   background-repeat: no-repeat;
-  margin-left: -7.7em;
-  margin-right: -7.7em;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   height: 60em;
@@ -996,49 +1020,289 @@ header {
   flex-direction: column;
   justify-content: start;
   align-items: center; }
-  .touch h2 {
-    font-size: 4em;
-    padding: .8em;
-    margin-top: 2em;
-    text-align: center; }
-  .touch p {
-    color: #fff;
-    padding-left: 17em;
-    padding-right: 17em;
-    font-size: 1.2em;
-    line-height: 3.2rem;
-    text-align: center; }
-
-@media screen and (max-width: 900px) {
-  .story {
-    background-color: #fff;
-    /* display: flex;
-            flex-direction: column; */
-    padding: 3em;
-    margin-top: 0%; }
-    .story__ourStory__title {
-      color: #231F20;
-      padding: 1em;
-      font-size: 4em; }
-    .story__ourStory .story__text {
-      color: #231F20;
-      /* height: 10em; */
+  .touch .touch__parrafo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .touch .touch__parrafo .touch__parrafo__title {
+      display: flex;
+      justify-content: center;
+      font-size: 4em;
+      color: #D2232A;
+      margin-top: 2em;
+      text-align: center;
+      font-family: playball; }
+    .touch .touch__parrafo .touch__parrafo__text {
+      color: #fff;
       padding-left: 17em;
       padding-right: 17em;
       font-size: 1.2em;
       line-height: 3.2rem;
       text-align: center; }
-    .story .story__provide__img {
-      size: 10em; }
-    .story .story__provide .story__provide__title {
-      color: #D2232A;
-      padding: 1.6rem;
-      padding-left: 1em;
-      color: #D2232A; }
-    .story .story__provide .story__text {
-      color: #231F20;
+    .touch .touch__parrafo .touch__parrafo__text__small {
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+  .touch .form-label {
+    color: #fff;
+    text-align: center; }
+
+/* PAGINA PRINCIPAL */
+/* PAGINA PRINCIPAL */
+/* PAGINA PRINCIPAL */
+/* PAGINA PRINCIPAL */
+@media screen and (max-width: 950px) {
+  .bannerPrincipal {
+    background-image: url("../images/imagen banner home.png");
+    margin: none;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25em; }
+    .bannerPrincipal .bannerPrincipal__title {
+      padding: 2em;
+      font-size: 3.2rem; }
+      .bannerPrincipal .bannerPrincipal__title .bannerPrincipal__title2 {
+        color: #fff; }
+  .story {
+    background-color: #fff;
+    padding: 2em;
+    margin-top: 0%; }
+    .story .story__ourStory {
       padding-left: 3em;
-      font-size: 1.2em;
-      line-height: 3.2rem; }
-    .story .titulo__negro {
-      color: #231F20; } }
+      padding-right: 3em; }
+      .story .story__ourStory .story__text {
+        font-size: 1.2em;
+        padding-left: 2em;
+        padding-right: 2em; }
+      .story .story__ourStory__title {
+        font-size: 2.4em;
+        padding: 0.5em; }
+    .story .story__provide {
+      display: flex;
+      flex-direction: column; }
+      .story .story__provide .story__provide__img {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .story .story__provide .story__provide__img .story__provide__img__item {
+          height: 20em;
+          width: 30em; }
+      .story .story__provide .story__provide__sectionImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .story .story__provide .story__provide__sectionImg .story__provide__sectionImg__title {
+          font-size: 2.4em; }
+        .story .story__provide .story__provide__sectionImg .story__provide__sectionImg__text {
+          font-size: 1.2em;
+          text-align: center; }
+  .offer {
+    background-image: url("../images/imagen empanadas.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .offer .offer__whatWeOffer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 5em; }
+      .offer .offer__whatWeOffer .offer__whatWeOffer__title {
+        color: #fff;
+        padding: .3em;
+        text-align: center;
+        font-size: 2.8em; }
+      .offer .offer__whatWeOffer .offer__whatWeOffer__text {
+        color: #fff;
+        padding-left: 10em;
+        padding-right: 10em;
+        font-size: 1.2em;
+        line-height: 3.2rem;
+        text-align: center; }
+    .offer .offer__image {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .offer .offer__image .offer__image__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.6rem;
+        width: inherit/2;
+        height: inherit/2; }
+        .offer .offer__image .offer__image__item .offer__image__item__title {
+          font-size: 2.4em; }
+        .offer .offer__image .offer__image__item .offer__image__button__menu {
+          color: #231F20;
+          font-size: 0.8em;
+          padding-left: 5rem;
+          padding-right: 5rem; }
+  .touch {
+    background-image: url("../images/image 5.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; }
+    .touch .touch__parrafo {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .touch .touch__parrafo .touch__parrafo__title {
+        display: flex;
+        justify-content: center;
+        font-size: 2.8em;
+        color: #D2232A;
+        margin-top: 2em;
+        text-align: center;
+        font-family: playball; }
+      .touch .touch__parrafo .touch__parrafo__text {
+        color: #fff;
+        padding-left: 10em;
+        padding-right: 10em;
+        font-size: 1.2em;
+        line-height: 3.2rem;
+        text-align: center; }
+      .touch .touch__parrafo .touch__parrafo__text__small {
+        display: flex;
+        justify-content: center;
+        text-align: center; } }
+
+@media screen and (max-width: 650px) {
+  .bannerPrincipal {
+    background-image: url("../images/imagen banner home.png");
+    margin: none;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15em; }
+    .bannerPrincipal .bannerPrincipal__title {
+      padding: 1em;
+      font-size: 1.6rem; }
+      .bannerPrincipal .bannerPrincipal__title .bannerPrincipal__title2 {
+        color: #fff; }
+  .story {
+    background-color: #fff;
+    padding: 2em;
+    margin-top: 0%; }
+    .story .story__ourStory {
+      padding-left: 3em;
+      padding-right: 3em; }
+      .story .story__ourStory .story__text {
+        font-size: 0.8em;
+        padding-left: 2em;
+        padding-right: 2em; }
+      .story .story__ourStory__title {
+        font-size: 1.6em;
+        padding: 0.5em; }
+    .story .story__provide {
+      display: flex;
+      flex-direction: column; }
+      .story .story__provide .story__provide__img {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .story .story__provide .story__provide__img .story__provide__img__item {
+          height: 10em;
+          width: 20em; }
+      .story .story__provide .story__provide__sectionImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .story .story__provide .story__provide__sectionImg .story__provide__sectionImg__title {
+          font-size: 1.6em; }
+        .story .story__provide .story__provide__sectionImg .story__provide__sectionImg__text {
+          font-size: 0.8em;
+          text-align: center; }
+  .offer {
+    background-image: url("../images/imagen empanadas.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .offer .offer__whatWeOffer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1em; }
+      .offer .offer__whatWeOffer .offer__whatWeOffer__title {
+        color: #fff;
+        padding: .1em;
+        text-align: center;
+        font-size: 2.4em; }
+      .offer .offer__whatWeOffer .offer__whatWeOffer__text {
+        color: #fff;
+        padding-left: 12em;
+        padding-right: 12em;
+        font-size: 0.8em;
+        line-height: 1.6rem;
+        text-align: center; }
+    .offer .offer__image {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .offer .offer__image .offer__image__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.6rem;
+        width: inherit/2;
+        height: inherit/2; }
+        .offer .offer__image .offer__image__item .offer__image__item__title {
+          font-size: 1.6em; }
+        .offer .offer__image .offer__image__item .offer__image__button__menu {
+          color: #231F20;
+          font-size: 0.8em;
+          padding-left: 5rem;
+          padding-right: 5rem; }
+  .touch {
+    background-image: url("../images/image 5.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; }
+    .touch .touch__parrafo {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .touch .touch__parrafo .touch__parrafo__title {
+        display: flex;
+        justify-content: center;
+        font-size: 2.4em;
+        color: #D2232A;
+        padding-top: 1em;
+        text-align: center;
+        font-family: playball; }
+      .touch .touch__parrafo .touch__parrafo__text {
+        color: #fff;
+        padding-left: 10em;
+        padding-right: 10em;
+        font-size: 0.8em;
+        line-height: 3.2rem;
+        text-align: center; }
+      .touch .touch__parrafo .touch__parrafo__text__small {
+        display: flex;
+        justify-content: center;
+        text-align: center; } }

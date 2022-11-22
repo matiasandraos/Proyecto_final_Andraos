@@ -8,7 +8,8 @@
     <meta name="keywords" content="CAFE, COFFE STORE, NAPLES, ARGENTINIAN FOOD">
     <meta name="description" content="BEAUTIFUL ARGENTINIAN COFFE STORE IN NAPLES, FLORIDA">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/translated.css">
 </head>
 
@@ -42,12 +43,12 @@
 
 
     <!-- BANNER -->
-    <section class="banner">
-        <h1 class="banner__title">
+    <section class="bannerPrincipal">
+        <h1 class="bannerPrincipal__title">
 
 
             Delicius Food in a Casual,
-            <div class="banner__title2">
+            <div class="bannerPrincipal__title2">
                 Contemporary Setting
             </div>
 
@@ -58,14 +59,13 @@
         </h1>
 
     </section>
-    <main class="container">
-
+    <main >
 
 
         <!-- OUR STORY -->
 
-        <section class="story row">
-            <article class="story__ourStory col-12 text-center">
+        <section class="story ">
+            <article class="story__ourStory ">
                 <div class="subtitulos">
                     Santa Fe Cafe
                 </div>
@@ -79,35 +79,39 @@
                     served in a beautiful, casual indoor/outdoor setting next door to Max Mara at Waterside Shops.
                 </p>
             </article>
-            
-            <div class="story__provide col-lg-12  col-xl-6" >
-                <figure class="story__provide__img col">
-                    <img src="./images/image 1.png" alt="plato de comida">
-                </figure>
-            </div>
-            
-            <article class="story_provide col-lg-12 col-xl-6">
-                    <h2 class="story__provide__title">
+            <article class="story__provide">
+
+                <div class="story__provide__img ">
+                    <figure >
+                        <img class="story__provide__img__item" src="./images/image 1.png" alt="plato de comida" >
+                    </figure>
+                </div>
+
+                <div class="story__provide__sectionImg ">
+                    <h2 class="story__provide__sectionImg__title">
                         We Provide Locally
                         Crafted Food
                     </h2>
-                    <p class="story__text">Santa Fe Cafe will your thrill your taste buds with classics like eggs
+                    <p class="story__provide__sectionImg__text">Santa Fe Cafe will your thrill your taste buds with
+                        classics like eggs
                         benedict, hand-crafted hot
                         and
                         cold sandwiches and burgers to flavor-filled international selections like Argentinean empanadas
                         and
                         churrasco steak.</p>
-                    <h2 class="story__provide__title titulo__negro">
+                    <h2 class="story__provide__sectionImg__title titulo__negro">
                         This Is All About Santa Fe Cafe
                     </h2>
-                    <p class="story__text">
+                    <p class="story__provide__sectionImg__text">
                         Open 7 days a week for breakfast and lunch, you can choose to eat in or take
                         your meal or
                         beverage to
                         go. At Santa Fe Cafe it’s always easy, breezy, delectable and fun!
                     </p>
+                </div>
             </article>
-           
+
+
 
 
 
@@ -134,7 +138,7 @@
                     <figure>
                         <img src="./images/image 3.png" alt="">
                     </figure>
-                    <h2>Breakfast</h2>
+                    <h3 class="offer__image__item__title">Breakfast</h3>
                     <button>
                         <a class="offer__image__button__menu" href="./pages/menu.html">Learn More</a>
                     </button>
@@ -143,7 +147,7 @@
                     <figure>
                         <img src="./images/image 4.png" alt="">
                     </figure>
-                    <h2>Lunch</h2>
+                    <h3 class="offer__image__item__title">Lunch</h3>
                     <button>
                         <a class="offer__image__button__menu" href="./pages/menu.html">Learn More</a>
                     </button>
@@ -155,26 +159,28 @@
         <!-- GET IN TOUCH -->
 
         <section class="touch">
-            <article>
-                <h2>Get In Touch With Us</h2>
-                <p>Want to ask a question or leave a note or suggestion? Feel free to complete the form below and let us
+            <article class="touch__parrafo">
+                <h3 class="touch__parrafo__title">
+                    Get In Touch With Us
+                </h3>
+                <p class="touch__parrafo__text">Want to ask a question or leave a note or suggestion? Feel free to complete the form below and let us
                     know how we can help!</p>
-                <p><small>Mon – Sun 8:00 AM – 4:00 PM</small></p>
+                <p class="touch__parrafo__text__small"><small>Mon – Sun 8:00 AM – 4:00 PM</small></p>
             </article>
 
-            
-                  
+
+
             <div class="input-group-lg mb-3 ">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="input-group-lg mb-3">
+            </div>
+            <div class="input-group-lg mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-         </form>
+            </div>
+            </form>
         </section>
-      
+
 
 
 
@@ -182,8 +188,8 @@
 
 
     <footer>
-        <article class="footer row">
-            <div class="footer__contact col-md-12 col-lg-4">
+        <article class="footer ">
+            <div class="footer__contact ">
                 <h3 class="footer__contact__title">
                     Contact Us
                 </h3>
@@ -194,13 +200,13 @@
                 </p>
                 <p class="footer__contact__text">Call Us: (239) 631-7450
                     Email Us: lucas@santafenaples.com
-                    
+
                 </p>
                 <p class="footer__contact__text">
                     Open Mon - Sun 8:00 AM - 4:00 PM
                 </p>
             </div>
-            <div class="footer__quickLinks col-md-12 col-lg-4">
+            <div class="footer__quickLinks ">
                 <h3 class="footer__quickLinks__title">Quick Links</h3>
                 <ul>
                     <li class="footer__quickLinks__list">
@@ -223,12 +229,18 @@
             <div class="footer__locateUs col-md-12 col-lg-4">
                 <h3 class="footer__locateUs__title">Locate Us</h3>
                 <div class="footer__locateUs__maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.486570997762!2d-81.80427798496983!3d26.213375183433687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db1f5c74f04c55%3A0x3c6d83e1b7101f4f!2sSanta%20Fe%20Cafe!5e0!3m2!1ses-419!2sus!4v1665980016063!5m2!1ses-419!2sus" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.486570997762!2d-81.80427798496983!3d26.213375183433687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db1f5c74f04c55%3A0x3c6d83e1b7101f4f!2sSanta%20Fe%20Cafe!5e0!3m2!1ses-419!2sus!4v1665980016063!5m2!1ses-419!2sus"
+                        width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
         </article>
     </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+</script>
+
 </html>

@@ -1,3 +1,5 @@
+
+
 /* NAVBAR */
 /* NAVBAR */
 /* NAVBAR */
@@ -73,6 +75,8 @@
     @media screen and (max-width: 768px) {
 
         .footer {
+            display: flex;
+            flex-direction: column;
             .footer__contact {
                 &__title {
                     font-size: $text-md;
@@ -122,6 +126,8 @@
 
 
         .footer {
+            display: flex;
+            flex-direction: column;
             .footer__contact {
                 &__title {
                     font-size: $text-md;
@@ -769,7 +775,5 @@
 
     }
 
-
-   
-
 }
+

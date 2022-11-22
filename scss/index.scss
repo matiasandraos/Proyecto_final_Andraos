@@ -7,7 +7,7 @@
 @import './misc/_variables';
 @import './misc/_normalize';
 
-@import './misc/_mixin' ;
+@import './misc/_mixin';
 @import './misc/_extends';
 
 
@@ -34,25 +34,31 @@
 
 /* BANNER */
 
-.banner {
-      
-    
+.bannerPrincipal {
+
+
     background-image: url('../images/imagen\ banner\ home.png');
     margin: none;
     margin-left: 0%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    height: 500px;
+    height: 40em;
 
-    .banner__title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        height: 500px;
+    .bannerPrincipal__title {
+
+
         padding: 2em;
         font-size: $sp-md;
+
+
+        .bannerPrincipal__title2 {
+            color: $light;
+
+        }
+
 
     }
 
@@ -61,10 +67,6 @@
 }
 
 
-.banner__title2 {
-    color: $light;
-
-}
 
 
 
@@ -74,7 +76,7 @@
 
     z-index: -2;
 
-    max-width: auto;
+    /* max-width: auto; */
 }
 
 
@@ -84,66 +86,108 @@
 .story {
 
     background-color: $light;
-    /* display: flex;
-        flex-direction: column; */
+
     padding: 3em;
     margin-top: 0%;
 
-    &__ourStory__title {
-        color: $primary;
-        padding: 1em;
-        font-size: $text-xxl;
-    }
+    .story__ourStory {
 
-    &__ourStory .story__text {
-        color: $primary;
-        height: 150px;
-        padding-left: 17em;
-        padding-right: 17em;
-        font-size: $text-sm;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5em;
+        padding-right: 5em;
 
-        line-height: $sp-md;
-        text-align: center;
+        &__title {
+            color: $primary;
+            padding-top: .5em;
+            padding-bottom: 0.5em;
+            font-size: $text-xxl;
+        }
 
-    }
- .story__provide {
+        .story__text {
+            color: $primary;
 
+            padding-left: 16em;
+            padding-right: 16em;
+            font-size: $text-sm;
 
-    .story__provide__title {
-    color: $secondary;
-    padding: $sp-sm;
-    padding-left: 1em;
-    color: $accent;
-    }
-    .story__text {
-    color: $primary;
-    
-    padding-left: 3em;
+            line-height: $sp-md;
+            text-align: center;
 
-    font-size: $text-sm;
-
-    line-height: $sp-md;
+        }
 
 
     }
-    
-    
 
-    
+
+    .story__provide {
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+        justify-content: center;
+        
+
+
+        .story__provide__img {
+            padding: .5em;
+            /* .story__provide__img__item {
+                 height: 30em;
+                 width: 40em;
+               
+            } */
+        }
+
+
+        .story__provide__sectionImg {
+
+
+
+            .story__provide__sectionImg__title {
+                color: $secondary;
+
+
+                color: $accent;
+                padding-left: 1em;
+                padding-right: 4em;
+
+            }
+
+            .story__provide__sectionImg__text {
+                color: $primary;
+
+                padding-left: 2em;
+                padding-right: 4em;
+
+                font-size: $text-sm;
+
+                line-height: $sp-md;
+
+
+            }
+        }
+
+
+
+
+
+
+
+
+        .titulo__negro {
+            color: $primary;
+
+        }
+
+
+
+
+
+
+
+
     }
-
-    .titulo__negro {
-    color: $primary;
-
-    }
-   
-
-   
-
-
-
-
-
 }
 
 /* .story__ourStory {
@@ -185,74 +229,82 @@
 .offer {
     background-image: url('../images/imagen\ empanadas.png');
     background-repeat: no-repeat;
-    margin-left: -7.5em;
-    margin-right: -7.5em;
+
+    width: 100%;
     height: 60em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-        .offer__whatWeOffer {
-         display: flex;
+    .offer__whatWeOffer {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 6em;
 
 
-                &__title {
-                color: $light;
-                padding: .8em;
-                text-align: center;
-                font-size: $text-xxl;
+        &__title {
+            color: $light;
+            padding: .8em;
+            text-align: center;
+            font-size: $text-xxl;
 
-                }
+        }
 
-                &__text {
-                    color: $light;
-                    height: 70px;
-                    padding-left: 20em;
-                    padding-right: 20em;
-                    font-size: $text-sm;
+        &__text {
+            color: $light;
+            height: 70px;
+            padding-left: 25em;
+            padding-right: 25em;
+            font-size: $text-sm;
 
-                    line-height: $sp-md;
-                    text-align: center;
+            line-height: $sp-md;
+            text-align: center;
 
-                }
-
-        
-           }
+        }
 
 
-        .offer__image {
+    }
+
+
+    .offer__image {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 60%;
 
 
-                &__item {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    padding: $sp-sm;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: $sp-sm;
 
-                                .offer__image__button__menu {
-                                    color: $primary;
-                                    font-size: $text-xs;
-                                    padding-left: $sp-xl;
-                                    padding-right: $sp-xl;
-
-                                }
+            .offer__image__item__title {
+                font-family: playball;
+                font-size: $text-lg;
+            }
 
 
-
-                }
-
-
+            .offer__image__button__menu {
+                color: $primary;
+                font-size: $text-xs;
+                padding-left: $sp-xl;
+                padding-right: $sp-xl;
 
 
             }
+
+
+
+        }
+
+
+
+
+    }
 
 
 
@@ -275,8 +327,7 @@
 .touch {
     background-image: url('../images/image\ 5.png');
     background-repeat: no-repeat;
-    margin-left: -7.7em;
-    margin-right: -7.7em;
+    width: 100%;
     margin-top: 0;
     margin-bottom: 0;
     height: 60em;
@@ -284,110 +335,537 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+   
 
+    .touch__parrafo {
 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
-& h2 {
-    font-size: $text-xxl;
-    padding: .8em;
-    margin-top: 2em;
-    text-align: center;
-
-}
-
-
-
-& p {
-    color: $light;
-    padding-left: 17em;
-    padding-right: 17em;
-    font-size: $text-sm;
-
-    line-height: $sp-md;
-    text-align: center;
-}
-
-
-
-
-
-
-}
-
-
-
-
-@media screen and (max-width: 900px) {
-
-
-    .story {
-
-        background-color: $light;
-        /* display: flex;
-            flex-direction: column; */
-        padding: 3em;
-        margin-top: 0%;
-    
-        &__ourStory__title {
-            color: $primary;
-            padding: 1em;
+        .touch__parrafo__title {
+            display: flex;
+            justify-content: center;
             font-size: $text-xxl;
+            color: $secondary;
+            margin-top: 2em;
+            text-align: center;
+            font-family: playball;
+
         }
-    
-        &__ourStory .story__text {
-            color: $primary;
-            /* height: 10em; */
+
+        .touch__parrafo__text {
+            color: $light;
             padding-left: 17em;
             padding-right: 17em;
             font-size: $text-sm;
-    
+
             line-height: $sp-md;
             text-align: center;
-    
         }
-     .story__provide {
-    
-        &__img {
-            size: 10em;
+
+        .touch__parrafo__text__small {
+            display: flex;
+            justify-content: center;
+            text-align: center;
         }
-    
-        .story__provide__title {
-        color: $secondary;
-        padding: $sp-sm;
-        padding-left: 1em;
-        color: $accent;
+    }
+    .form-label {
+        color: $light;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA PRINCIPAL */
+/* PAGINA PRINCIPAL */
+/* PAGINA PRINCIPAL */
+/* PAGINA PRINCIPAL */
+
+@media screen and (max-width: 950px) {
+
+    .bannerPrincipal {
+
+
+        background-image: url('../images/imagen\ banner\ home.png');
+        margin: none;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 25em;
+
+        .bannerPrincipal__title {
+
+            padding: 2em;
+            font-size: $sp-md;
+
+
+            .bannerPrincipal__title2 {
+                color: $light;
+
+            }
+
+
         }
-        .story__text {
-        color: $primary;
-        
-        padding-left: 3em;
-    
-        font-size: $text-sm;
-    
-        line-height: $sp-md;
-    
-    
+
+
+
+    }
+
+    .story {
+        background-color: $light;
+        padding: 2em;
+        margin-top: 0%;
+
+        .story__ourStory {
+
+            padding-left: 3em;
+            padding-right: 3em;
+
+            .story__text {
+                font-size: $text-sm;
+                padding-left: 2em;
+                padding-right: 2em;
+
+
+            }
+
+            &__title {
+                font-size: $text-lg;
+                padding: 0.5em;
+            }
+
+
+
         }
-        
-        
-    
-        
+
+
+        .story__provide {
+            display: flex;
+            flex-direction: column;
+
+            .story__provide__img {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .story__provide__img__item {
+                    height: 20em;
+                    width: 30em;
+
+
+                }
+            }
+
+            .story__provide__sectionImg {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .story__provide__sectionImg__title {
+                    font-size: $text-lg;
+
+                }
+
+                .story__provide__sectionImg__text {
+                    font-size: $text-sm;
+                    text-align: center;
+                }
+            }
         }
-    
-        .titulo__negro {
-        color: $primary;
-    
+
+
+
+
+    }
+
+    .offer {
+
+
+        background-image: url('../images/imagen\ empanadas.png');
+        background-repeat: no-repeat;
+        width: 100%;
+
+        height: 60em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .offer__whatWeOffer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5em;
+
+            .offer__whatWeOffer__title {
+                color: $light;
+                padding: .3em;
+                text-align: center;
+                font-size: $text-xl;
+
+            }
+
+            .offer__whatWeOffer__text {
+                color: $light;
+
+                padding-left: 10em;
+                padding-right: 10em;
+
+                font-size: $text-sm;
+
+                line-height: $sp-md;
+                text-align: center;
+
+            }
+
+
         }
+
+
+        .offer__image {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+
+
+            .offer__image__item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: $sp-sm;
+                width: inherit/2;
+                height: inherit/2;
+
+                .offer__image__item__title {
+                    font-size: $text-lg;
+                }
+
+                .offer__image__button__menu {
+                    color: $primary;
+                    font-size: $text-xs;
+                    padding-left: $sp-lg;
+                    padding-right: $sp-lg;
+
+                }
+
+
+
+            }
+
+
+
+
+        }
+
+
+
+
+
+    }
+
+    .touch {
+        background-image: url('../images/image\ 5.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 40em;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
        
     
-       
+        .touch__parrafo {
     
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
     
+            .touch__parrafo__title {
+                display: flex;
+                justify-content: center;
+                font-size: $text-xl;
+                color: $secondary;
+                margin-top: 2em;
+                text-align: center;
+                font-family: playball;
     
+            }
     
+            .touch__parrafo__text {
+                color: $light;
+                padding-left: 10em;
+                padding-right: 10em;
+                font-size: $text-sm;
     
+                line-height: $sp-md;
+                text-align: center;
+            }
+    
+            .touch__parrafo__text__small {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
     }
 
 
 }
+
+
+@media screen and (max-width: 650px) {
+    .bannerPrincipal {
+
+
+        background-image: url('../images/imagen\ banner\ home.png');
+        margin: none;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 15em;
+
+        .bannerPrincipal__title {
+
+            padding: 1em;
+            font-size: $sp-sm;
+
+
+            .bannerPrincipal__title2 {
+                color: $light;
+
+            }
+
+
+        }
+
+
+
+    }
+
+    .story {
+        background-color: $light;
+        padding: 2em;
+        margin-top: 0%;
+
+        .story__ourStory {
+
+            padding-left: 3em;
+            padding-right: 3em;
+
+            .story__text {
+                font-size: $text-xs;
+                padding-left: 2em;
+                padding-right: 2em;
+
+
+            }
+
+            &__title {
+                font-size: $text-md;
+                padding: 0.5em;
+            }
+
+
+
+        }
+
+
+        .story__provide {
+            display: flex;
+            flex-direction: column;
+
+            .story__provide__img {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .story__provide__img__item {
+                    height: 10em;
+                    width: 20em;
+
+
+                }
+            }
+
+            .story__provide__sectionImg {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .story__provide__sectionImg__title {
+                    font-size: $text-md;
+
+                }
+
+                .story__provide__sectionImg__text {
+                    font-size: $text-xs;
+                    text-align: center;
+                }
+            }
+        }
+
+
+
+
+    }
+
+    .offer {
+
+
+        background-image: url('../images/imagen\ empanadas.png');
+        background-repeat: no-repeat;
+        width: 100%;
+
+        height: 50em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .offer__whatWeOffer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1em;
+
+            .offer__whatWeOffer__title {
+                color: $light;
+                padding: .1em;
+                text-align: center;
+                font-size: $text-lg;
+
+            }
+
+            .offer__whatWeOffer__text {
+                color: $light;
+
+                padding-left: 12em;
+                padding-right: 12em;
+
+                font-size: $text-xs;
+
+                line-height: $sp-sm;
+                text-align: center;
+
+            }
+
+
+        }
+
+
+        .offer__image {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+
+
+            .offer__image__item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: $sp-sm;
+                width: inherit/2;
+                height: inherit/2;
+
+                .offer__image__item__title {
+                    font-size: $text-md;
+                }
+
+                .offer__image__button__menu {
+                    color: $primary;
+                    font-size: $text-xs;
+                    padding-left: $sp-lg;
+                    padding-right: $sp-lg;
+
+                }
+
+
+
+            }
+
+
+
+
+        }
+
+
+
+
+
+    }
+    .touch {
+        background-image: url('../images/image\ 5.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 40em;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+       
     
+        .touch__parrafo {
+    
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .touch__parrafo__title {
+                display: flex;
+                justify-content: center;
+                font-size: $text-lg;
+                color: $secondary;
+                padding-top: 1em;
+                text-align: center;
+                font-family: playball;
+    
+            }
+    
+            .touch__parrafo__text {
+                color: $light;
+                padding-left: 10em;
+                padding-right: 10em;
+                font-size: $text-xs;
+    
+                line-height: $sp-md;
+                text-align: center;
+            }
+    
+            .touch__parrafo__text__small {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}
