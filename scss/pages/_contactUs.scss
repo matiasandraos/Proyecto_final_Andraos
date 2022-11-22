@@ -13,51 +13,77 @@ $white: #ffffff;
 
     /* width: $width; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-   
+    
     
     /* height: 100vh; */
-    margin-bottom: 2.4em;
+    
 
     .mainContactUs__information {
 
-        width: $width/2;
-       
-       
-        padding: $sp-md;
-
+        width: $width;
+        padding: $sp-sm;
         &__title{ 
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             font-size: $text-md;
             color: $secondary;
             width: 100%;
-             margin-left: 10rem;
+            padding-bottom: 2em;
+             
+            text-align: center;
 
              
                    
                             
         }
+    
+
+        .mainContactUs__information__section {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+       
         
         &__list {
-            width: inherit;
-            margin-left: 10rem;
+            width: $width/2;
+         
             padding-top: $sp-md;
             display: flex;
             justify-content: space-between;
+            font-size: $text-md;
 
+                .mainContactUs__information__list__item {
 
+                    list-style: circle;
+
+                    .list__item__hours {
+                        font-size: $text-xs;
+                        color: $primary;
+                    }
+                }
         }
+
+      
+        
+    }
        
 
     }
 
     .mainContactUs__fillOut {
         background-color: $red;
-        width: $width/2;
-        padding: $sp-md;
-        height: 100vh;
+      
+        
+        width: 100%;
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-bottom: 4em;
+
+      
+
         
         
       
@@ -65,10 +91,12 @@ $white: #ffffff;
         
 
         &__title {
+            padding-top: 0.5em;
             font-size: $text-xxl;
             color: $light;
-            margin-right: 15rem;
-
+           
+            text-align: center;
+           
             
 
     }
@@ -76,24 +104,14 @@ $white: #ffffff;
             &__text {
                 color: $light;
                 font-size: $text-sm;
-                margin-right: 15rem;
-                padding-top: $sp-md;
+                
+                padding-top: $sp-sm;
+                text-align: center;
             }
 
     }
 
 
-
-}
-
-@media screen and (max-with: 900px) { 
-
-    .mainContactUs {
-        display: flex;
-        flex-direction: column;
-
-        
-    }
 
 }
 

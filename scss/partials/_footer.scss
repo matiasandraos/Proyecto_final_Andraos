@@ -1,16 +1,64 @@
 .footer {
     color: $light;
+    font-family: $font-secondary;
     background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    min-height: 33em;
+    height: 100%;
     height: auto;
-    margin-top: -2em;
-    padding-top: 3em;
-    padding-left: 3em;
+    padding-bottom: 3em;
     
- 
+/*     margin-top: -2em;
+    padding-top: 3em;
+    padding-left: 3em; */
+        
+        .footer__contact {
+                padding-top: 2em;
+               
+
+            &__title {
+                font-family: playball;
+                padding-bottom: 0.5em;
+                font-size: $text-lg;
+                
+            }
+
+            &__text {
+
+                font-size: $text-sm;
+            } 
+
+        }
+        
+        .footer__quickLinks {
+
+            padding-top: 2em;
+            
+           
+            &__title {
+                font-family: playball;
+                padding-bottom: 0.5em;
+                font-size: $text-lg;
+            }
+
+            &__list {
+                list-style: circle;
+                font-size: $text-sm;
+            }
+
+        }
+
+        .footer__locateUs {
+            padding-top:2em ;
+           
+            &__title {
+                font-size: $text-lg;
+                font-family: playball;
+                padding-bottom: 0.5em;
+            }
+        }
+
 
 }
 
